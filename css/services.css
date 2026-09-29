@@ -1,0 +1,166 @@
+/* ==========================================
+   SERVICES BANNER
+   ========================================== */
+.services-banner {
+  height: 45vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, var(--bg-black) 100%), 
+              url('https://images.unsplash.com/photo-1629654297299-c8506221ca97?q=80&w=1920&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+  border-bottom: 1px solid var(--border-gold);
+}
+
+.services-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.75);
+  z-index: 1;
+}
+
+.services-banner h1 {
+  position: relative;
+  z-index: 2;
+  font-size: 2.8rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.services-banner p {
+  position: relative;
+  z-index: 2;
+  font-family: var(--font-subheading);
+  color: var(--gold-accent);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+/* ==========================================
+   SERVICES GRID & CARDS
+   ========================================== */
+.services-section {
+  padding: 6rem 0;
+  background-color: var(--bg-black);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.service-card {
+  padding: 3.5rem 2.2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.service-icon-wrapper {
+  width: 70px;
+  height: 70px;
+  border: 1px solid var(--border-gold);
+  background: rgba(212, 175, 55, 0.03);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 2.2rem auto;
+  border-radius: 50%;
+  transition: var(--transition-smooth);
+}
+
+.service-icon-wrapper i {
+  font-size: 2rem;
+  color: var(--gold-accent);
+  filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.35));
+  transition: var(--transition-smooth);
+}
+
+.service-card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  margin-bottom: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-white);
+}
+
+.service-card p {
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+  flex-grow: 1;
+}
+
+.service-card .btn {
+  margin-top: auto;
+  align-self: center;
+  padding: 0.7rem 1.6rem;
+  font-size: 0.75rem;
+}
+
+/* Hover effects */
+.service-card:hover {
+  border-color: var(--border-gold-heavy);
+  background: var(--card-hover-bg);
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6), 0 0 25px rgba(212, 175, 55, 0.15);
+}
+
+.service-card:hover .service-icon-wrapper {
+  background: var(--gold-primary);
+  border-color: var(--gold-primary);
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+}
+
+.service-card:hover .service-icon-wrapper i {
+  color: var(--bg-black);
+  filter: none;
+}
+
+/* ==========================================
+   RESPONSIVE STYLES
+   ========================================== */
+@media (max-width: 991px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-banner h1 {
+    font-size: 2.2rem;
+  }
+  .services-section {
+    padding: 5rem 0;
+  }
+  .service-card {
+    padding: 2.5rem 1.5rem;
+  }
+  .service-icon-wrapper {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 1.8rem;
+  }
+}

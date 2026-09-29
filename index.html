@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Royal Computers - Premium Computer Sales & Service Center. Your trusted destination for branded laptops, custom assembled PCs, printers, CCTV surveillance, and IT solutions.">
+  <meta name="keywords" content="Royal Computers, computer sales, laptop repair, CCTV installation, printer service, IT solutions, custom PC build">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://royalcomputers.com/">
+  <meta property="og:title" content="Royal Computers | Computer Sales & Service Center">
+  <meta property="og:description" content="Get high-performance custom PCs, premium laptops, CCTV setup, and expert repair services at Royal Computers. Authorized dealer of major brands.">
+  
+  <title>Royal Computers | Sales & Service Center</title>
+
+  <!-- Google Fonts & FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/home.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="no-scroll">
+  <!-- ==========================================
+       LOADING SCREEN
+       ========================================== -->
+  <div class="loader-wrapper">
+    <div class="loader-logo">
+      <div class="loader-spinner"></div>
+      <div class="loader-text">Royal Computers</div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       HEADER SECTION
+       ========================================== -->
+  <header class="header-nav" id="headerNav">
+    <div class="container">
+      <a href="./index.html" class="logo">
+        <svg class="logo-icon" viewBox="0 0 24 24">
+          <rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2" fill="none" />
+          <line x1="6" y1="21" x2="18" y2="21" stroke="currentColor" stroke-width="2" />
+          <line x1="12" y1="17" x2="12" y2="21" stroke="currentColor" stroke-width="2" />
+          <polygon points="12,7 9,11 15,11" fill="currentColor" />
+        </svg>
+        ROYAL <span>COMPUTERS</span>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="./index.html" class="nav-link active">Home</a>
+        <a href="./about.html" class="nav-link">About Us</a>
+        <a href="./sales.html" class="nav-link">Sales</a>
+        <a href="./services.html" class="nav-link">Services</a>
+        <a href="./contact.html" class="nav-link">Contact Us</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-primary" onclick="openInquiryModal('General Inquiry')">Quick Inquiry</button>
+        <div class="hamburger">
+       </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       HERO BANNER
+       ========================================== -->
+  <section class="hero-section" id="hero">
+    <!-- Video background from Vimeo (Technology loop) -->
+    <video autoplay muted loop playsinline class="hero-video-bg">
+    <source src="6754818-uhd_3840_2160_25fps.mp4" type="video/mp4">
+</video>
+<div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="subtitle">Welcome to Luxury Tech</span>
+      <h1>Powering Your Digital World <span>With Excellence</span></h1>
+      <div class="hero-buttons">
+        <a href="./services.html" class="btn btn-primary">Visit Services</a>
+         <a href="./contact.html" class="btn btn-primary">Contact Us</a>
+      </div>
+</section>
+  <!-- ==========================================
+       STATISTICS SECTION
+       ========================================== -->
+  <section class="stats-section">
+    <div class="container reveal">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number">1000+</div>
+          <div class="stat-label">Happy Customers</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">10+</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">500+</div>
+          <div class="stat-label">Devices Serviced</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">100+</div>
+          <div class="stat-label">Business Clients</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       OUR BRANDS SECTION (INFINITE MARQUEE)
+       ========================================== -->
+
+  <!-- ==========================================
+       WHY CHOOSE US SECTION
+       ========================================== -->
+  <section class="why-section">
+    <div class="container reveal">
+      <span class="subtitle">The Royal Advantage</span>
+      <h2>Why Choose Us</h2>
+      
+      <div class="why-grid">
+        <div class="why-card glass-card reveal reveal-delay-1">
+          <div class="why-icon-wrapper">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3>Genuine Products</h3>
+          <p>We source all laptop parts, custom components, and CCTV cameras directly from manufacturers. Every purchase carries a full official warranty.</p>
+        </div>
+
+        <div class="why-card glass-card reveal reveal-delay-2">
+          <div class="why-icon-wrapper">
+            <i class="fas fa-user-cog"></i>
+          </div>
+          <h3>Expert Technicians</h3>
+          <p>Our engineers hold certifications from major hardware brands, enabling them to resolve complex chip-level issues, data recovery, and server faults.</p>
+        </div>
+
+        <div class="why-card glass-card reveal reveal-delay-3">
+          <div class="why-icon-wrapper">
+            <i class="fas fa-bolt"></i>
+          </div>
+          <h3>Fast Service</h3>
+          <p>We respect your work schedules. We provide same-day diagnostics and priority repairs for laptops, systems, and toner refilling needs.</p>
+        </div>
+
+        <div class="why-card glass-card reveal reveal-delay-1">
+          <div class="why-icon-wrapper">
+            <i class="fas fa-tags"></i>
+          </div>
+          <h3>Affordable Pricing</h3>
+          <p>Get premium tech services and custom assembled rigs at competitive prices with transparent estimates and zero hidden fees.</p>
+        </div>
+
+        <div class="why-card glass-card reveal reveal-delay-2">
+          <div class="why-icon-wrapper">
+            <i class="fas fa-headset"></i>
+          </div>
+          <h3>Trusted Support</h3>
+          <p>We provide long-term AMC support contracts and dedicated post-service customer care for all home setups and enterprises.</p>
+        </div>
+
+        <div class="why-card glass-card reveal reveal-delay-3">
+          <div class="why-icon-wrapper">
+            <i class="fas fa-microchip"></i>
+          </div>
+          <h3>Latest Technology</h3>
+          <p>We design next-generation security systems, network architectures, and custom workstations utilizing the absolute latest components.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       TESTIMONIALS SECTION
+       ========================================== -->
+  <section class="testimonials-section">
+    <div class="container reveal">
+      <span class="subtitle">Client Endorsements</span>
+      <h2>What Our Clients Say</h2>
+      
+      <div class="testimonial-container">
+        <div class="testimonial-wrapper" id="testimonialWrapper">
+          <!-- Slide 1 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">"Royal Computers completely transformed our corporate IT infrastructure. Their CCTV surveillance setup is crystal clear, and their response time for server maintenance is exceptionally fast. Outstanding professionals!"</p>
+            <div class="testimonial-author">Vikram Malhotra</div>
+            <div class="testimonial-company">Director, Zenith Tech Solutions</div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">"I ordered a custom assembled PC for video editing and 3D rendering. The team understood my hardware requirements perfectly and delivered a flawless system with clean wire routing. Highly recommended!"</p>
+            <div class="testimonial-author">Ananya Sen</div>
+            <div class="testimonial-company">Creative Lead, Studio Pixel</div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">"My HP laptop had a major motherboard failure. Other service centers suggested replacing it, but Royal Computers' technician repaired it at the component level at a fraction of the cost. Truly experts!"</p>
+            <div class="testimonial-author">Rohan Deshmukh</div>
+            <div class="testimonial-company">Software Architect</div>
+          </div>
+        </div>
+        
+        <div class="testimonial-dots">
+          <span class="testimonial-dot active" onclick="switchTestimonial(0)"></span>
+          <span class="testimonial-dot" onclick="switchTestimonial(1)"></span>
+          <span class="testimonial-dot" onclick="switchTestimonial(2)"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       CALL TO ACTION SECTION
+       ========================================== -->
+  <section class="cta-section">
+    <div class="cta-bg-glow"></div>
+    <div class="container reveal">
+      <div class="cta-content">
+        <h2>Need a New Computer or Quick Repair?</h2>
+        <p>Whether you're setting up a security grid, building a custom gaming beast, or requiring urgent motherboard repairs, our certified team is ready to deliver world-class service.</p>
+        <button class="btn btn-primary" onclick="openInquiryModal('General Inquiry')">Contact Royal Computers</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER SECTION
+       ========================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-about">
+          <h3>Royal Computers</h3>
+          <p>A premier computer sales & service center providing state-of-the-art technological solutions, custom PC assembly, CCTV integration, and component repairs with a commitment to excellence.</p>
+          <div class="social-links">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./sales.html">Sales Center</a></li>
+            <li><a href="./services.html">Services Grid</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Core Services</h3>
+          <ul class="footer-links">
+            <li><a href="./services.html">Laptop Chip Repair</a></li>
+            <li><a href="./services.html">Custom Workstations</a></li>
+            <li><a href="./services.html">CCTV Surveillance</a></li>
+            <li><a href="./services.html">Toner Refilling</a></li>
+            <li><a href="./services.html">Network Layouts</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-contact">
+          <h3>Sales & Support</h3>
+          <ul>
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Royal Computers, Tech Plaza, Ground Floor, Sector 4, Mumbai, India</span>
+            </li>
+            <li>
+              <i class="fas fa-phone-alt"></i>
+              <span>+91 98765 43210<br>+91 22 2456 7890</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <span>info@royalcomputers.com<br>support@royalcomputers.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Royal Computers. All Rights Reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       QUICK INQUIRY GLASSMODAL
+       ========================================== -->
+  <div class="modal-overlay" id="inquiryModal">
+    <div class="modal-container">
+      <div class="modal-close"><i class="fas fa-times"></i></div>
+      <h3 class="modal-title">Request Information</h3>
+      <p class="modal-subtitle">Direct Inquiry Center</p>
+      
+      <form class="modal-form" id="modalInquiryForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="modalName">Full Name</label>
+            <input type="text" id="modalName" class="form-input" placeholder="e.g. John Doe" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="modalPhone">Phone Number</label>
+            <input type="tel" id="modalPhone" class="form-input" placeholder="e.g. +91 98765 43210" required>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label class="form-label" for="modalEmail">Email Address</label>
+          <input type="email" id="modalEmail" class="form-input" placeholder="e.g. john@example.com" required>
+        </div>
+        
+        <div class="form-group">
+          <label class="form-label" for="modalServiceSelect">Service / Product Needed</label>
+          <select id="modalServiceSelect" class="form-input">
+            <option value="General Inquiry">General Tech Inquiry</option>
+            <option value="Laptop Purchase">Laptop Sales</option>
+            <option value="Custom PC Build">Custom PC Assembly</option>
+            <option value="CCTV Installation">CCTV Surveillance Setup</option>
+            <option value="Hardware Repair">Laptop / Desktop Repair</option>
+            <option value="Printer Service">Printer Repair & Ink Refills</option>
+            <option value="Networking Solutions">Networking & Server Setup</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label class="form-label" for="modalMessage">Inquiry Details</label>
+          <textarea id="modalMessage" class="form-input" rows="4" placeholder="Briefly describe your hardware specs or service requirements..." required></textarea>
+        </div>
+        
+        <div class="modal-actions">
+          <button type="submit" class="btn btn-primary">Submit Email Inquiry</button>
+          <button type="button" class="btn btn-primary btn-whatsapp" id="modalWhatsAppBtn"><i class="fab fa-whatsapp"></i> Chat On WhatsApp</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Global scripts -->
+  <script src="./js/main.js"></script>
+
+  <!-- Slider logic script -->
+  <script>
+    let activeTestimonial = 0;
+    
+    function switchTestimonial(index) {
+      const wrapper = document.getElementById('testimonialWrapper');
+      const dots = document.querySelectorAll('.testimonial-dot');
+      if (!wrapper || !dots.length) return;
+      
+      activeTestimonial = index;
+      wrapper.style.transform = `translateX(-${index * 33.333}%)`;
+      
+      dots.forEach((dot, idx) => {
+        dot.classList.toggle('active', idx === index);
+      });
+    }
+    
+    // Auto slide testimonials
+    setInterval(() => {
+      let nextIdx = (activeTestimonial + 1) % 3;
+      switchTestimonial(nextIdx);
+    }, 8000);
+  </script>
+</body>
+</html>
